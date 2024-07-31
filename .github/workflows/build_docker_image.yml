@@ -6,17 +6,14 @@ on:
       environment-name:
         type: string
       dockerfile_path:
-        required: true
         type: string
         default: '.deploy/Dockerfile'
       image_name:
-        required: true
         type: string
         default: 'ghcr.io/${GITHUB_REPOSITORY}:${CI_COMMIT_REF_SHORT}'
       registry_user:
         required: true
         type: string
-        default: 'xloo'
 
 jobs:
   build_docker_image:
