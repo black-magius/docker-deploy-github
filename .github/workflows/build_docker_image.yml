@@ -17,7 +17,6 @@ on:
 
 jobs:
   build_docker_image:
-    runs-on: [self-hosted]
     name: Build & deploy docker image
     environment:
       name: ${{ inputs.environment-name }}
